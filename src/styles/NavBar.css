@@ -1,0 +1,251 @@
+.sec-navbar {
+    position: relative;
+    background-color: #3D464D;
+    height: 60px;
+    transition: .5s;
+    z-index: 999;
+}
+
+.sp-1 {
+    color: #FFD333;
+    background-color: #3D464D;
+}
+
+.sp-2 {
+    color: #3D464D;
+    background-color: #FFD333;
+}
+
+.input-group {
+    width: 400px;
+    transition: .5s;
+}
+
+.input-group:focus {
+    width: 600px;
+}
+
+.search-form {
+    width: 400px;
+}
+
+.input-search:focus {
+    box-shadow: none;
+}
+
+.active {
+    color: #FFD333;
+}
+
+.unactive {
+    color: white;
+}
+
+.unactive:hover {
+    color: #FFD333;
+}
+
+.toggle-btn {
+    position: absolute;
+    background-color: #FFD333;
+    color: #3D464D;
+    top: 0;
+    height: calc(100% + 7px);
+    width: 250px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.category-list {
+    position: absolute;
+    display: none;
+    width: 250px;
+    top: 200px;
+    background-color: #3D464D;
+    transition: .5s;
+    /* opacity: 0; */
+}
+
+.category-list.active {
+    display: block;
+    top: 60px;
+    /* opacity: 1; */
+}
+
+.category-list li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.sec-navbar.position {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: .5s;
+    height: 50px;
+}
+
+.sec-navbar.position .toggle-btn {
+    height: 50px;
+}
+
+.sec-navbar.position .category-list.active {
+    top: 50px;
+}
+
+@media (max-width: 991px) {
+
+    .nav-bar,
+    .sec-navbar {
+        display: none;
+    }
+
+    .small-screen {
+        background-color: #3D464D;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .small-screen .navbar-brand .sp-3 {
+        background-color: white;
+        color: #3D464D;
+    }
+
+    .small-screen .navbar-brand .sp-4 {
+        background-color: #FFD333;
+        color: white;
+    }
+
+    .nav-links {
+        position: fixed;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #3D464D;
+        padding: 20px;
+        width: 80%;
+        /* opacity: 0; */
+        transition: .5s;
+        border-top: 4px solid #FFD333;
+        border-bottom: 4px solid #FFD333;
+    }
+
+    .nav-links.nav-active {
+        /* opacity: 1; */
+        bottom: 10px;
+    }
+
+    .cart-btn,
+    .fav-btn {
+        position: relative;
+    }
+
+    .cart-lenght {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .fav-lenght {
+        position: absolute;
+        right: 54px;
+        top: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .small-screen {
+        display: none;
+    }
+}
+
+.burger-icon {
+    position: relative;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.burger-icon span:first-child {
+    top: 0;
+}
+
+.burger-icon span:nth-child(2) {
+    top: 6px;
+}
+
+.burger-icon span:last-child {
+    top: 12px;
+}
+
+.burger-icon.burger-active span:first-child {
+    top: 6px;
+    transform: rotate(405deg);
+    background-color: #FFD333;
+}
+
+.burger-icon.burger-active span:nth-child(2) {
+    width: 0;
+}
+
+.burger-icon.burger-active span:last-child {
+    top: 6px;
+    transform: rotate(-405deg);
+    background-color: #FFD333;
+}
+
+.cart-lenght {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.fav-lenght {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.angle {
+    transition: .3s;
+}
+
+.angle.rotate {
+    transform: rotate(180deg);
+}
+
+.category-link {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.category-link:hover {
+    margin-left: 14px;
+}
+
+.fav-lenght.span-back {
+    background-color: #FFD333;
+}
+
+.cart-lenght.span-back2 {
+    background-color: #FFD333;
+}
+
+.cart-lenght.cart-back {
+    background-color: #FFD333;
+}
+
+.cart-lenght.cart-back2 {
+    background-color: #FFD333;
+}

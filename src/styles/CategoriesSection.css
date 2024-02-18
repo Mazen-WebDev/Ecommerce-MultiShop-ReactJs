@@ -1,0 +1,32 @@
+.cat-box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.text-box {
+    border: 9px solid white;
+    transition: .5s;
+}
+
+.cat-box:hover .text-box {
+    background-color: #FFD333;
+    border: 9px solid #FFD333;
+}
+
+.cat-box:hover .cat-img {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.cat-img {
+    width: 200px;
+    transition: .5s;
+}
+
+.amount {
+    font-size: 14px;
+}
+
+.cat-link {
+    color: #3D464D;
+}

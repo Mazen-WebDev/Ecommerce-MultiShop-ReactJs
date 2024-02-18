@@ -1,0 +1,34 @@
+.contact {
+    background-color: #F5F5F5;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        margin-top: 80px;
+    }
+}
+
+textarea {
+    height: 150px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+    background-color: white;
+}
+
+.send-btn {
+    border: none;
+    background-color: #FFD333;
+    color: #3D464D;
+    transition: .3s;
+}
+
+.send-btn:hover {
+    background-color: #ffd333d6;
+}

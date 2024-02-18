@@ -1,0 +1,30 @@
+.footer-section {
+    background-color: #3D464D;
+}
+
+.sign-btn {
+    background-color: #FFD333;
+    border-color: #FFD333;
+    color: #3D464D;
+    border: none;
+}
+
+.input-group {
+    border-radius: 0;
+}
+
+.input-2 {
+    border: none;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+.dev {
+    color: white;
+}
+
+.github-link {
+    color: #FFD333;
+}

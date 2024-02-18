@@ -1,0 +1,23 @@
+h2 {
+    position: relative;
+    color: #3D464D;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    background-color: #3D464D;
+}
+
+@media (max-width: 767px) {
+    h2::after {
+        content: '';
+        left: 60%;
+        width: 40%;
+    }
+}

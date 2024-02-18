@@ -1,0 +1,74 @@
+.fav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    overflow: scroll;
+}
+
+@media (max-width: 991px) {
+    .fav {
+        width: 50%;
+    }
+
+    .fav-close {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fav {
+        width: 70%;
+    }
+}
+
+.fav-btn {
+    background-color: #FFD333;
+    border: none;
+    width: 80px;
+    transition: .3s;
+}
+
+.fav-icon {
+    color: #3D464D;
+}
+
+.fav-btn:hover {
+    background-color: #3D464D;
+}
+
+.fav-btn:hover .fav-icon {
+    color: #FFD333;
+}
+
+@media (max-width: 767px) {
+    .fav-box {
+        flex-direction: column;
+    }
+
+    .fav-btn {
+        width: 40px;
+    }
+
+    .fav-close {
+        margin-top: 10px;
+    }
+}
+
+.fav-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #3D464D;
+    transition: .3s;
+}
+
+.fav-close:hover {
+    color: #FFD333;
+}

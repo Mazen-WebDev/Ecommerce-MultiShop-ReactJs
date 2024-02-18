@@ -1,0 +1,176 @@
+.cart-page {
+    background-color: #F5F5F5;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.tr-1 {
+    background-color: #3D464D;
+}
+
+
+tbody,
+.summary-box,
+.checkout-box {
+    background-color: white;
+}
+
+.x-btn {
+    background-color: #FFD333;
+    border: none;
+    transition: .3s;
+}
+
+.x-btn:hover {
+    background-color: #3D464D;
+}
+
+.cart-sum {
+    color: #3D464D;
+}
+
+.summary-box {
+    width: 300px;
+    color: #3D464D;
+}
+
+.check-btn {
+    background-color: #FFD333;
+    border: none;
+    transition: .3s;
+    color: #3D464D;
+}
+
+.check-btn.disable {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.check-btn:hover {
+    background-color: #3D464D;
+    color: #FFD333;
+}
+
+.table-img {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    #summary-col {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .summary-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .table-img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cart-page {
+        margin-top: 80px;
+    }
+
+    .summary-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    table {
+        height: 300px;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .summary-box {
+        width: 250px;
+    }
+}
+
+.checkout {
+    position: fixed;
+    left: -100%;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    transition: .5s;
+    z-index: 9999;
+}
+
+.checkout-box {
+    position: relative;
+    background-color: #3D464D;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+
+.checkout.checkActive {
+    left: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-text {
+    width: 100%;
+}
+
+.billing {
+    background-color: #FFD333;
+    color: #3D464D;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.close-check {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #3D464D;
+    transition: .3s;
+}
+
+.close-check:hover {
+    color: white;
+}
+
+.check-btn2 {
+    background-color: #FFD333;
+    border: none;
+    transition: .3s;
+    color: #3D464D;
+}
+
+.check-btn2:hover {
+    background-color: #ffd333de;
+}
+
+.product-tr {
+    width: 100%;
+}
+
+.empty {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}

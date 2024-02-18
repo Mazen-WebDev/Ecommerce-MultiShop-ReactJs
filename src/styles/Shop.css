@@ -1,0 +1,32 @@
+.shop {
+    background-color: #F5F5F5;
+}
+
+.filter-title {
+    color: #3D464D;
+}
+
+.filter-box {
+    background-color: white;
+}
+
+@media (max-width: 991px) {
+    #shop-row {
+        margin-top: 50px;
+    }
+
+    .search-form {
+        margin-top: 50px;
+    }
+}
+
+.search-form {
+    width: 300px;
+
+}
+
+/* @media (min-width: 1199px) {
+    .search-form {
+        margin-top: 10px;
+    }
+} */
