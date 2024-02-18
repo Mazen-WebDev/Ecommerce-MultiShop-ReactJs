@@ -1,2 +1,2 @@
-# Ecommerce-MultiShop-ReactJs
-Multi Shop is ecommerce website and it developed by front-end skills : { HTML } - { CSS } - { BOOTSTRAP } - { JS } - { REACT } - { REACT ROUTER } - { REDUX TOOLKIT }
+# E-commerce MultiShop ( ReactJs )
+Multi Shop is e-commerce website and developed with: { HTML } - { CSS } - { BOOTSTRAP } - { JS } - { REACT } - { REACT ROUTER } - { REDUX TOOLKIT }
